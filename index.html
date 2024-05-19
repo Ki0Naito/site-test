@@ -78,10 +78,10 @@
 	<section id="form-reservation">
 		<h2>забронировать столик</h2>
 		<form action="">
-			<input type="text" placeholder="Введите имя...">
-			<input type="datetime" placeholder="Выберите дату и время">
-			<input type="text" placeholder="Выберите адрес ресторана">
-			<input type="tel" placeholder="+375 (_ _) - _ _ _ - _ _ - _ _">
+			<input type="text" name="name" placeholder="Введите имя..." required>
+			<input type="datetime" name="datetime" placeholder="Выберите дату и время" required>
+			<input type="text" name="address" placeholder="Выберите адрес ресторана" required>
+			<input type="tel" type="telephone" placeholder="+375 (_ _) - _ _ _ - _ _ - _ _" required>
 			<input class="button" type="submit" value="ОСТАВИТЬ ЗАЯВКУ">
 		</form>
 	</section>
