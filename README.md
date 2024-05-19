@@ -1,1 +1,1 @@
-https://ki0naito.github.io/site-test/ for start
+https://ki0naito.github.io/site-test/ click to start
