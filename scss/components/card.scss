@@ -1,0 +1,44 @@
+.card-pizza {
+	position: relative;
+	z-index: 10;
+	border: 1px solid #ADADAD;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-sizing: border-box;
+	padding: 14px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	.imgs {
+		width: 100%;
+		position: relative;
+		img {
+			width: 100%;
+		}
+		.promotion {
+			position: absolute;
+			margin: 0;
+			top: 30%;
+			left: 0;
+			text-transform: uppercase;
+			background-color: $btn_color;
+			color: white;
+			font-size: 0.8vw;
+			letter-spacing: 1px;
+			padding: 8px 15% 8px 10%;
+		}
+	}
+	h5 {
+		font-weight: 400;
+		margin: 20px 0 6px;
+	}
+	h4 {
+		font-weight: 700;
+		margin: 0 0 2vh;
+		font-size: 1.4vw;
+	}
+	.button a {
+		margin: 0;
+		padding: 14px 25px;
+	}
+}

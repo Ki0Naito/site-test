@@ -1,0 +1,14 @@
+.button a {
+	background-color: $btn-color;
+	text-transform: uppercase;
+	border-radius: 2px;
+	padding: 14px 25px;
+	width: auto;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	&:hover {
+		background-color: $btn-color-hover;
+		cursor: pointer;
+	}
+}
