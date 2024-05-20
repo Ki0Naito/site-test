@@ -1,0 +1,119 @@
+@import "./variables";
+@import "./reuse-elements";
+@import "./base-elements";
+@import "./components/btn";
+@import "./components/tricolor-btn";
+@import "./components/menu";
+@import "./components/card";
+@import "./components/form-reservation";
+
+header {
+	@include paddings(0);
+	width: 100%;
+	height: 90vh;
+	background-image: url('../img/first_section_bg.jpeg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	&:after {
+		@extend %dark-blur;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 10px;
+		background-image: url('../img/triangle.png');
+		background-position: left bottom;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
+	.header-content {
+		height: 70%;
+		position: relative;
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		text-transform: uppercase;
+		h1 {
+			font-size: 4.6vw;
+			margin: 30px 0 15px;
+		}
+		h5 {
+			font-size: 1vw;
+		}
+	}
+}
+
+#about {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr 2fr;
+	row-gap: 30px;
+	column-gap: 8%;
+	h2 {
+		margin: 0;
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	@include paddings(50px);
+	.about-imgs {
+		position: relative;
+		img {
+			object-fit: cover;
+			&:first-of-type {
+				width: 330px;
+				height: 330px;
+				filter: blur(2px) brightness(0.8);
+				margin: 0 70px 70px 0;
+			}
+			&:last-of-type {
+				position: absolute;
+				top: 30px;
+				left: 30px;
+				width: 370px;
+				height: 370px;
+			}
+		}
+	}
+	p {
+		margin: 0;
+		align-self: end;
+		font-size: 1vw;
+		line-height: 1.5vw;
+		color: #555555;
+	}
+}
+
+#best_position {
+	@include paddings(8vh);
+	width: 100%;
+	height: 70vh;
+	background-image: url('../img/section_bestpos_bg.jpeg');
+	background-position: center top;
+	background-size: 100%;
+	position: relative;
+	&:after {
+		@extend %dark-blur;
+		background-color: rgba(0, 0, 0, 0.85);
+		backdrop-filter: none;
+	}
+	h2 {
+		color: white;
+		position: relative;
+		z-index: 10;
+	}
+	.all-cards {
+		display: flex;
+		justify-content: space-between;
+		.card-pizza {
+			width: 20%;
+		}
+	}
+}
